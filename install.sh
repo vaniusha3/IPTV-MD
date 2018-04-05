@@ -233,7 +233,7 @@ echo "phpmyadmin phpmyadmin/mysql/app-pass password $sqlpasswd" | debconf-set-se
 echo "phpmyadmin phpmyadmin/reconfigure-webserver multiselect none" | debconf-set-selections
 
 apt-get install -y mysql-server > /dev/null 2>&1
-apt-get install -y php5-mysql  > /dev/null 2>&1
+apt-get install -y php7.0-mysql > /dev/null 2>&1
 
 mysql -uroot -p$sqlpasswd -e "CREATE DATABASE $sqldatabase"
 mysql -uroot -p$sqlpasswd -e "grant all privileges on $sqldatabase.* to '$sqluname'@'localhost' identified by '$sqlpasswd'"
