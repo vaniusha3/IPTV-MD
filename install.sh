@@ -1,11 +1,11 @@
 #!/bin/bash
 
-# FUNCTION: Ubuntu 14.04 Check
+# FUNCTION: Ubuntu 16.04 Check
 distro(){
 if [ -f /etc/lsb-release ]; then
     . /etc/lsb-release
         if [ $DISTRIB_ID == Ubuntu ]; then
-            if [ $DISTRIB_RELEASE != "14.04" ]; then
+            if [ $DISTRIB_RELEASE != "16.04" ]; then
                 error
             fi
         else
