@@ -69,6 +69,13 @@
                                     </div>
                                 </div>
 
+                               <div class="form-group">
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12">Proxy</label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <p style="padding: 5px;"><span><input type="checkbox" class="flat" name="restream" id="" value="1" {{ $stream->restream ? "checked" : ""}}></span></p>
+                                    </div>
+                                </div>
+
                                 <div class="form-group">
                                     <label class="control-label col-md-3 col-sm-3 col-xs-12">Bit stream filter:</label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
